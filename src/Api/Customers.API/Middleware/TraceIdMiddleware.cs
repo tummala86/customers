@@ -1,23 +1,23 @@
 ﻿using Customers.API.Constants;
 using System.Diagnostics;
 
-namespace Customers.API.Middleware
+namespace Customers.API.Middleware;
+
+public class TraceIdMiddleware
 {
-    public class TraceIdMiddleware
+    private readonly RequestDelegate _next;
+
+    public TraceIdMiddleware(RequestDelegate next)
     {
-        private readonly RequestDelegate _next;
+        _next = next;
+    }
 
-        public TraceIdMiddleware(RequestDelegate next)
-        {
-            _next = next;
-        }
+    public async Task Invoke(HttpContext context)
+    {
+        var traceId = Activity.Current?.TraceId;
+        context.Response.Headers.Add(ApiHeaders.TraceId, traceId?.ToString());
 
-        public async Task Invoke(HttpContext context)
-        {
-            var traceId = Activity.Current?.TraceId;
-            context.Response.Headers.Add(ApiHeaders.TraceId, traceId?.ToString());
-
-            await _next(context);
-        }
+        await _next(context);
     }
 }
+

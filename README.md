@@ -64,6 +64,7 @@ $ dotnet test
 ## Assumptions
 
 - I used in-memory data store temporarly to test the functionality. In real time I would use MS Sql high scalable and performance database.
+- No data validations added as part of this test (i.e duplicate email and name checks). I would add validation based on business requirements.
 
 ## Areas for Improvements
 

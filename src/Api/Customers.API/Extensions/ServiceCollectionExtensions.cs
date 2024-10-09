@@ -15,7 +15,6 @@ namespace Customers.API.Extensions
             services.AddTransient<ICustomerCommandHandler, CustomerCommandHandler>();
             services.AddTransient<IGetCustomersQueryHandler, GetCustomersHandler>();
 
-
             // Infrastructure services
             services.AddTransient<ICustomerCommand, CustomersCommand>();
             services.AddTransient<IGetCustomersQuery, GetCustomersQuery>();
