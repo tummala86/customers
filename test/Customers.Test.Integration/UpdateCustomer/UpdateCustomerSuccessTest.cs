@@ -23,7 +23,7 @@ namespace Customers.Test.Integration.UpdateCustomer
                     email = "test@gmail.com",
                 };
 
-            var response = await client.PostAsJsonAsync("v3/customers", customerRequest);
+            var response = await client.PostAsJsonAsync("v3/customers/update", customerRequest);
             var body = await response.Content.ReadAsStringAsync();
             var customerDetails = JsonSerializer.Deserialize<Customer>(body);
 

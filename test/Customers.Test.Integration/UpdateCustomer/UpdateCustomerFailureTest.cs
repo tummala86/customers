@@ -17,7 +17,7 @@ namespace Customers.Test.Integration.UpdateCustomer
             var updateCustomerRequest = CustomerRequest(Guid.NewGuid(), firstName: "Robert");
 
             // Act
-            var results = await client.PutAsJsonAsync($"v3/customers", updateCustomerRequest);
+            var results = await client.PutAsJsonAsync($"v3/customers/update", updateCustomerRequest);
 
             // Assert
             results.StatusCode.Should().Be(HttpStatusCode.NotFound);

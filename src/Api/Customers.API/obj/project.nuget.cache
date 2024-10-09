@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Eszy06CwIWmFWJTl6wqscBAEhU8Ve4uBLnaIyGCV37+6dOqqis1M39+EeS8MspqFatXLjf2UJ+JbTm3lPQtAag==",
+  "dgSpecHash": "abUf23GNtwoOiGdJ7iaWmrbBVz7TUaVwlp/gUViv3bexf8viPRzBgqHb4klB/TddM/PfWiwWJMj/MkPi/8bK0g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Challenge\\src\\Api\\Customers.API\\Customers.API.csproj",
+  "projectFilePath": "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Customers\\customers\\src\\Api\\Customers.API\\Customers.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tumma\\.nuget\\packages\\hellang.middleware.problemdetails\\6.5.1\\hellang.middleware.problemdetails.6.5.1.nupkg.sha512",
     "C:\\Users\\tumma\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.8\\microsoft.entityframeworkcore.7.0.8.nupkg.sha512",
@@ -26,11 +26,7 @@
     "C:\\Users\\tumma\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
     "C:\\Users\\tumma\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
     "C:\\Users\\tumma\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512",
-    "C:\\Users\\tumma\\.nuget\\packages\\system.reflection.metadata\\5.0.0\\system.reflection.metadata.5.0.0.nupkg.sha512",
-    "C:\\Users\\tumma\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.15\\microsoft.netcore.app.ref.7.0.15.nupkg.sha512",
-    "C:\\Users\\tumma\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.15\\microsoft.windowsdesktop.app.ref.7.0.15.nupkg.sha512",
-    "C:\\Users\\tumma\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.15\\microsoft.aspnetcore.app.ref.7.0.15.nupkg.sha512",
-    "C:\\Users\\tumma\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.15\\microsoft.netcore.app.host.win-x64.7.0.15.nupkg.sha512"
+    "C:\\Users\\tumma\\.nuget\\packages\\system.reflection.metadata\\5.0.0\\system.reflection.metadata.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

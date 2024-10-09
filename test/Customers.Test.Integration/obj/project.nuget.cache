@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iQrQw/aUTpJyn6DtFi9cOFEwPkGp8jGDe0b/IE2+q32Y1Ln7DrOajvAUA52PAIXfuQ3hYU3R95stbviKAdVZNA==",
+  "dgSpecHash": "cYRl1va03aN7jYBpfZ0+Toa6C4XKXlyHwcKynJvQSgJ+JEMDe+fqKl7Hr4PMG2YWx+EqeguzTcssSnoHfw/g1g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Challenge\\test\\Customers.Test.Integration\\Customers.Test.Integration.csproj",
+  "projectFilePath": "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Customers\\customers\\test\\Customers.Test.Integration\\Customers.Test.Integration.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tumma\\.nuget\\packages\\coverlet.collector\\3.1.0\\coverlet.collector.3.1.0.nupkg.sha512",
     "C:\\Users\\tumma\\.nuget\\packages\\fluentassertions\\6.11.0\\fluentassertions.6.11.0.nupkg.sha512",
@@ -146,10 +146,7 @@
     "C:\\Users\\tumma\\.nuget\\packages\\xunit.core\\2.4.1\\xunit.core.2.4.1.nupkg.sha512",
     "C:\\Users\\tumma\\.nuget\\packages\\xunit.extensibility.core\\2.4.1\\xunit.extensibility.core.2.4.1.nupkg.sha512",
     "C:\\Users\\tumma\\.nuget\\packages\\xunit.extensibility.execution\\2.4.1\\xunit.extensibility.execution.2.4.1.nupkg.sha512",
-    "C:\\Users\\tumma\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.3\\xunit.runner.visualstudio.2.4.3.nupkg.sha512",
-    "C:\\Users\\tumma\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.15\\microsoft.netcore.app.ref.7.0.15.nupkg.sha512",
-    "C:\\Users\\tumma\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.15\\microsoft.windowsdesktop.app.ref.7.0.15.nupkg.sha512",
-    "C:\\Users\\tumma\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.15\\microsoft.aspnetcore.app.ref.7.0.15.nupkg.sha512"
+    "C:\\Users\\tumma\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.3\\xunit.runner.visualstudio.2.4.3.nupkg.sha512"
   ],
   "logs": []
 }

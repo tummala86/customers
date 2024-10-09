@@ -22,7 +22,7 @@ namespace Customers.Test.Integration.CreateCustomer
                 };
 
             // Act
-            var response = await client.PostAsJsonAsync("v3/customers", customerRequest);
+            var response = await client.PostAsJsonAsync("v3/customers/add", customerRequest);
 
             // Assert
             response.StatusCode.Should().Be(HttpStatusCode.Created); 

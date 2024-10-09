@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Challenge\\test\\Customers.Test.Integration\\Customers.Test.Integration.csproj": {}
+    "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Customers\\customers\\test\\Customers.Test.Integration\\Customers.Test.Integration.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Challenge\\src\\Api\\Customers.API\\Customers.API.csproj": {
+    "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Customers\\customers\\src\\Api\\Customers.API\\Customers.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Challenge\\src\\Api\\Customers.API\\Customers.API.csproj",
+        "projectUniqueName": "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Customers\\customers\\src\\Api\\Customers.API\\Customers.API.csproj",
         "projectName": "Customers.API",
-        "projectPath": "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Challenge\\src\\Api\\Customers.API\\Customers.API.csproj",
+        "projectPath": "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Customers\\customers\\src\\Api\\Customers.API\\Customers.API.csproj",
         "packagesPath": "C:\\Users\\tumma\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Challenge\\src\\Api\\Customers.API\\obj\\",
+        "outputPath": "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Customers\\customers\\src\\Api\\Customers.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\tumma\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -22,17 +22,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.305\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Challenge\\src\\Api\\Customers.Domain\\Customers.Domain.csproj": {
-                "projectPath": "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Challenge\\src\\Api\\Customers.Domain\\Customers.Domain.csproj"
+              "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Customers\\customers\\src\\Api\\Customers.Domain\\Customers.Domain.csproj": {
+                "projectPath": "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Customers\\customers\\src\\Api\\Customers.Domain\\Customers.Domain.csproj"
               },
-              "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Challenge\\src\\Api\\Customers.Infrastructure\\Customers.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Challenge\\src\\Api\\Customers.Infrastructure\\Customers.Infrastructure.csproj"
+              "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Customers\\customers\\src\\Api\\Customers.Infrastructure\\Customers.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Customers\\customers\\src\\Api\\Customers.Infrastructure\\Customers.Infrastructure.csproj"
               }
             }
           }
@@ -71,24 +72,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[7.0.15, 7.0.15]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[7.0.15, 7.0.15]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[7.0.15, 7.0.15]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[7.0.15, 7.0.15]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -97,18 +80,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.305\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Challenge\\src\\Api\\Customers.Domain\\Customers.Domain.csproj": {
+    "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Customers\\customers\\src\\Api\\Customers.Domain\\Customers.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Challenge\\src\\Api\\Customers.Domain\\Customers.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Customers\\customers\\src\\Api\\Customers.Domain\\Customers.Domain.csproj",
         "projectName": "Customers.Domain",
-        "projectPath": "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Challenge\\src\\Api\\Customers.Domain\\Customers.Domain.csproj",
+        "projectPath": "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Customers\\customers\\src\\Api\\Customers.Domain\\Customers.Domain.csproj",
         "packagesPath": "C:\\Users\\tumma\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Challenge\\src\\Api\\Customers.Domain\\obj\\",
+        "outputPath": "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Customers\\customers\\src\\Api\\Customers.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\tumma\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -157,37 +140,23 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[7.0.15, 7.0.15]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[7.0.15, 7.0.15]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[7.0.15, 7.0.15]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.305\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Challenge\\src\\Api\\Customers.Infrastructure\\Customers.Infrastructure.csproj": {
+    "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Customers\\customers\\src\\Api\\Customers.Infrastructure\\Customers.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Challenge\\src\\Api\\Customers.Infrastructure\\Customers.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Customers\\customers\\src\\Api\\Customers.Infrastructure\\Customers.Infrastructure.csproj",
         "projectName": "Customers.Infrastructure",
-        "projectPath": "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Challenge\\src\\Api\\Customers.Infrastructure\\Customers.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Customers\\customers\\src\\Api\\Customers.Infrastructure\\Customers.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\tumma\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Challenge\\src\\Api\\Customers.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Customers\\customers\\src\\Api\\Customers.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\tumma\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -204,8 +173,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Challenge\\src\\Api\\Customers.Domain\\Customers.Domain.csproj": {
-                "projectPath": "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Challenge\\src\\Api\\Customers.Domain\\Customers.Domain.csproj"
+              "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Customers\\customers\\src\\Api\\Customers.Domain\\Customers.Domain.csproj": {
+                "projectPath": "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Customers\\customers\\src\\Api\\Customers.Domain\\Customers.Domain.csproj"
               }
             }
           }
@@ -240,37 +209,23 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[7.0.15, 7.0.15]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[7.0.15, 7.0.15]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[7.0.15, 7.0.15]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.305\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Challenge\\test\\Customers.Test.Integration\\Customers.Test.Integration.csproj": {
+    "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Customers\\customers\\test\\Customers.Test.Integration\\Customers.Test.Integration.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Challenge\\test\\Customers.Test.Integration\\Customers.Test.Integration.csproj",
+        "projectUniqueName": "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Customers\\customers\\test\\Customers.Test.Integration\\Customers.Test.Integration.csproj",
         "projectName": "Customers.Test.Integration",
-        "projectPath": "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Challenge\\test\\Customers.Test.Integration\\Customers.Test.Integration.csproj",
+        "projectPath": "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Customers\\customers\\test\\Customers.Test.Integration\\Customers.Test.Integration.csproj",
         "packagesPath": "C:\\Users\\tumma\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Challenge\\test\\Customers.Test.Integration\\obj\\",
+        "outputPath": "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Customers\\customers\\test\\Customers.Test.Integration\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\tumma\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -287,8 +242,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Challenge\\src\\Api\\Customers.API\\Customers.API.csproj": {
-                "projectPath": "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Challenge\\src\\Api\\Customers.API\\Customers.API.csproj"
+              "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Customers\\customers\\src\\Api\\Customers.API\\Customers.API.csproj": {
+                "projectPath": "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Customers\\customers\\src\\Api\\Customers.API\\Customers.API.csproj"
               }
             }
           }
@@ -343,26 +298,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[7.0.15, 7.0.15]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[7.0.15, 7.0.15]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[7.0.15, 7.0.15]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.305\\RuntimeIdentifierGraph.json"
         }
       }
     }

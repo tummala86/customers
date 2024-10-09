@@ -172,11 +172,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Challenge\\src\\WebApp\\Customers.WebApp\\Customers.WebApp.csproj",
+      "projectUniqueName": "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Customers\\customers\\src\\WebApp\\Customers.WebApp\\Customers.WebApp.csproj",
       "projectName": "Customers.WebApp",
-      "projectPath": "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Challenge\\src\\WebApp\\Customers.WebApp\\Customers.WebApp.csproj",
+      "projectPath": "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Customers\\customers\\src\\WebApp\\Customers.WebApp\\Customers.WebApp.csproj",
       "packagesPath": "C:\\Users\\tumma\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Challenge\\src\\WebApp\\Customers.WebApp\\obj\\",
+      "outputPath": "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Customers\\customers\\src\\WebApp\\Customers.WebApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\tumma\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -187,6 +187,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\sdk\\7.0.305\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -233,24 +234,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[7.0.15, 7.0.15]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[7.0.15, 7.0.15]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[7.0.15, 7.0.15]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[7.0.15, 7.0.15]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -259,7 +242,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.305\\RuntimeIdentifierGraph.json"
       }
     }
   }

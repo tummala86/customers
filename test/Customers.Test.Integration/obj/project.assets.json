@@ -8435,11 +8435,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Challenge\\test\\Customers.Test.Integration\\Customers.Test.Integration.csproj",
+      "projectUniqueName": "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Customers\\customers\\test\\Customers.Test.Integration\\Customers.Test.Integration.csproj",
       "projectName": "Customers.Test.Integration",
-      "projectPath": "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Challenge\\test\\Customers.Test.Integration\\Customers.Test.Integration.csproj",
+      "projectPath": "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Customers\\customers\\test\\Customers.Test.Integration\\Customers.Test.Integration.csproj",
       "packagesPath": "C:\\Users\\tumma\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Challenge\\test\\Customers.Test.Integration\\obj\\",
+      "outputPath": "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Customers\\customers\\test\\Customers.Test.Integration\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\tumma\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8456,8 +8456,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Challenge\\src\\Api\\Customers.API\\Customers.API.csproj": {
-              "projectPath": "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Challenge\\src\\Api\\Customers.API\\Customers.API.csproj"
+            "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Customers\\customers\\src\\Api\\Customers.API\\Customers.API.csproj": {
+              "projectPath": "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Customers\\customers\\src\\Api\\Customers.API\\Customers.API.csproj"
             }
           }
         }
@@ -8512,26 +8512,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[7.0.15, 7.0.15]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[7.0.15, 7.0.15]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[7.0.15, 7.0.15]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.305\\RuntimeIdentifierGraph.json"
       }
     }
   }

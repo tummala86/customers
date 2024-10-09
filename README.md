@@ -1,8 +1,8 @@
 ﻿# Customer Management System
 The Customers solution contains 2 projects
 
-Customers.API
-Customers.Web
+- Customers.API
+- Customers.Web
 
 The API service hosts the following endpoints.
 
@@ -20,6 +20,7 @@ DELETE /v3/customers/{id} - Delete customer (soft delete)
 
 The web application used to manage customers information.
 
+![Customers View](image.png)
 
 
 ## Prerequisites
@@ -34,7 +35,7 @@ This project relies on the following dependencies:
 Clone the code into your local using the below command:
 Clone the project:
 ```sh
-$ git clone https://github.com/tummala86/customer.git
+$ git clone https://github.com/tummala86/customers.git
 ```
 
 There are two ways to run this project:

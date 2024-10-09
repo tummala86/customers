@@ -17,7 +17,7 @@ namespace Customers.Test.Integration.CreateCustomer
             var customerRequest = CustomerRequest(firstName: null);
 
             // Act
-            var response = await client.PostAsJsonAsync("v3/customers", customerRequest);
+            var response = await client.PostAsJsonAsync("v3/customers/add", customerRequest);
 
             // Assert
             response.StatusCode.Should().Be(HttpStatusCode.BadRequest);
