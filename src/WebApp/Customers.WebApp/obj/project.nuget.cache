@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "sBbimuuquvNQgwZ9fnTTUAhIvKap8z822v+i3NIRN9yL1OyzyO32hM1PyjhvZRDBXYf0Pb2EwC31+B7hqSfr0w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Challenge\\src\\WebApp\\Customers.WebApp\\Customers.WebApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\tumma\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.18.1\\microsoft.visualstudio.azure.containers.tools.targets.1.18.1.nupkg.sha512",
+    "C:\\Users\\tumma\\.nuget\\packages\\o9d.json.formatting\\0.1.0\\o9d.json.formatting.0.1.0.nupkg.sha512",
+    "C:\\Users\\tumma\\.nuget\\packages\\oneof\\3.0.255\\oneof.3.0.255.nupkg.sha512",
+    "C:\\Users\\tumma\\.nuget\\packages\\oneof.sourcegenerator\\3.0.255\\oneof.sourcegenerator.3.0.255.nupkg.sha512",
+    "C:\\Users\\tumma\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.15\\microsoft.netcore.app.ref.7.0.15.nupkg.sha512",
+    "C:\\Users\\tumma\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.15\\microsoft.windowsdesktop.app.ref.7.0.15.nupkg.sha512",
+    "C:\\Users\\tumma\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.15\\microsoft.aspnetcore.app.ref.7.0.15.nupkg.sha512",
+    "C:\\Users\\tumma\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.15\\microsoft.netcore.app.host.win-x64.7.0.15.nupkg.sha512"
+  ],
+  "logs": []
+}

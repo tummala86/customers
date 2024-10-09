@@ -1,0 +1,7 @@
+C:\Users\tumma\OneDrive\Desktop\Pinewood\Challenge\test\Customers.Test.Integration\bin\Debug\net7.0\CoverletSourceRootsMapping
+C:\Users\tumma\OneDrive\Desktop\Pinewood\Challenge\test\Customers.Test.Integration\obj\Debug\net7.0\Customers.Test.Integration.csproj.AssemblyReference.cache
+C:\Users\tumma\OneDrive\Desktop\Pinewood\Challenge\test\Customers.Test.Integration\obj\Debug\net7.0\MvcTestingAppManifest.json
+C:\Users\tumma\OneDrive\Desktop\Pinewood\Challenge\test\Customers.Test.Integration\obj\Debug\net7.0\Customers.Test.Integration.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tumma\OneDrive\Desktop\Pinewood\Challenge\test\Customers.Test.Integration\obj\Debug\net7.0\Customers.Test.Integration.AssemblyInfoInputs.cache
+C:\Users\tumma\OneDrive\Desktop\Pinewood\Challenge\test\Customers.Test.Integration\obj\Debug\net7.0\Customers.Test.Integration.AssemblyInfo.cs
+C:\Users\tumma\OneDrive\Desktop\Pinewood\Challenge\test\Customers.Test.Integration\obj\Debug\net7.0\Customers.Test.Integration.csproj.CoreCompileInputs.cache

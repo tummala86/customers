@@ -1,0 +1,36 @@
+@model IEnumerable<CustomerModel>
+
+@{
+    ViewData["Title"] = "All Customers";
+}
+
+<h1>All Customers</h1>
+
+<p>
+    <a asp-action="Add" class="btn btn-primary">Add</a>
+</p>
+
+<table class="customers">
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var customer in Model)
+        {
+            <tr>
+                <td>@customer.FirstName</td>
+                <td>@customer.LastName</td>
+                <td>@customer.Email</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@customer.Id" class="btn btn-warning">Edit</a>
+                    <a asp-action="Delete" asp-route-id="@customer.Id" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

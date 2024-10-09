@@ -1,0 +1,139 @@
+{
+  "version": 3,
+  "targets": {
+    "net7.0": {
+      "OneOf/3.0.255": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/OneOf.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/OneOf.dll": {}
+        }
+      },
+      "OneOf.SourceGenerator/3.0.255": {
+        "type": "package"
+      }
+    }
+  },
+  "libraries": {
+    "OneOf/3.0.255": {
+      "sha512": "EKrroFkaqbCB80WXr8isiCpSyelDc44qEdUwJ2v++zUDXr3igZ88UPt8MRGlNP5CDdOlHyTjCEzm1WY0MHCypg==",
+      "type": "package",
+      "path": "oneof/3.0.255",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net35/OneOf.dll",
+        "lib/net45/OneOf.dll",
+        "lib/netstandard1.3/OneOf.dll",
+        "lib/netstandard2.0/OneOf.dll",
+        "oneof.3.0.255.nupkg.sha512",
+        "oneof.nuspec"
+      ]
+    },
+    "OneOf.SourceGenerator/3.0.255": {
+      "sha512": "+OK3GkVYHAxguFGsyHlbMUxjOVoxVQJVwKNCRNlAUY6IsO/fTGTfqpQFK8iy4LMgx8XDbRmCDjJJDMOjTxd9lg==",
+      "type": "package",
+      "path": "oneof.sourcegenerator/3.0.255",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "analyzers/dotnet/cs/OneOf.SourceGenerator.dll",
+        "oneof.sourcegenerator.3.0.255.nupkg.sha512",
+        "oneof.sourcegenerator.nuspec",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net7.0": [
+      "OneOf >= 3.0.255",
+      "OneOf.SourceGenerator >= 3.0.255"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\tumma\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Challenge\\src\\Api\\Customers.Domain\\Customers.Domain.csproj",
+      "projectName": "Customers.Domain",
+      "projectPath": "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Challenge\\src\\Api\\Customers.Domain\\Customers.Domain.csproj",
+      "packagesPath": "C:\\Users\\tumma\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\tumma\\OneDrive\\Desktop\\Pinewood\\Challenge\\src\\Api\\Customers.Domain\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\tumma\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net7.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net7.0": {
+        "targetAlias": "net7.0",
+        "dependencies": {
+          "OneOf": {
+            "target": "Package",
+            "version": "[3.0.255, )"
+          },
+          "OneOf.SourceGenerator": {
+            "target": "Package",
+            "version": "[3.0.255, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[7.0.15, 7.0.15]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[7.0.15, 7.0.15]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[7.0.15, 7.0.15]"
+          }
+        ],
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

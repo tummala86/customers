@@ -1,0 +1,75 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "Customers.WebApp/1.0.0": {
+        "dependencies": {
+          "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.18.1",
+          "O9d.Json.Formatting": "0.1.0",
+          "OneOf": "3.0.255",
+          "OneOf.SourceGenerator": "3.0.255"
+        },
+        "runtime": {
+          "Customers.WebApp.dll": {}
+        }
+      },
+      "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.18.1": {},
+      "O9d.Json.Formatting/0.1.0": {
+        "runtime": {
+          "lib/net5.0/O9d.Json.Formatting.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.1.0.0"
+          }
+        }
+      },
+      "OneOf/3.0.255": {
+        "runtime": {
+          "lib/netstandard2.0/OneOf.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "OneOf.SourceGenerator/3.0.255": {}
+    }
+  },
+  "libraries": {
+    "Customers.WebApp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.18.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-RtNQEQQ/bgaxzrsZEkPB+/DFaUgNiq8GtZz/R4lt+mKXPcEvEuawlbl0PB1s7ND9kvkUVZtMphPxE9Ma1VGiFg==",
+      "path": "microsoft.visualstudio.azure.containers.tools.targets/1.18.1",
+      "hashPath": "microsoft.visualstudio.azure.containers.tools.targets.1.18.1.nupkg.sha512"
+    },
+    "O9d.Json.Formatting/0.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-EayUcvbCDGI6gzpKGvflwurybLVtEy/9E55/WQLUgm1JJNuNe9pZsBgJem5/RQQN/O1fSBn0846y6OMelksD/w==",
+      "path": "o9d.json.formatting/0.1.0",
+      "hashPath": "o9d.json.formatting.0.1.0.nupkg.sha512"
+    },
+    "OneOf/3.0.255": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-EKrroFkaqbCB80WXr8isiCpSyelDc44qEdUwJ2v++zUDXr3igZ88UPt8MRGlNP5CDdOlHyTjCEzm1WY0MHCypg==",
+      "path": "oneof/3.0.255",
+      "hashPath": "oneof.3.0.255.nupkg.sha512"
+    },
+    "OneOf.SourceGenerator/3.0.255": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+OK3GkVYHAxguFGsyHlbMUxjOVoxVQJVwKNCRNlAUY6IsO/fTGTfqpQFK8iy4LMgx8XDbRmCDjJJDMOjTxd9lg==",
+      "path": "oneof.sourcegenerator/3.0.255",
+      "hashPath": "oneof.sourcegenerator.3.0.255.nupkg.sha512"
+    }
+  }
+}
