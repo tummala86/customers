@@ -78,5 +78,5 @@ $ dotnet test
 - I would implement end to end tests on all endpoints to find out intermittent issues in all environments.
 - I would implement load tests to find out the application peformance.
 - I would add more unit and integration tests to cover all parts of source code.
-- Ensure that persisted PCI and PII information is securelly encrypted.
-- Ensure that any PCI and PII information logged is masked.
+- Ensure that persisted PII information is securelly encrypted.
+- Ensure that any PII information logged is masked.
