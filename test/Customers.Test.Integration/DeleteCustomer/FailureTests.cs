@@ -5,7 +5,7 @@ using Xunit;
 
 namespace Customers.Test.Integration.DeleteCustomer
 {
-    public class DeleteCustomerFailureTest : TestServerFixture
+    public class FailureTests : TestServerFixture
     {
         [Fact]
         public async Task DeleteCustomer_Should_Return_NotFound_If_Invalid_Customer_Id()

@@ -6,7 +6,7 @@ using Xunit;
 
 namespace Customers.Test.Integration.CreateCustomer
 {
-    public class CreateCustomerSuccessTest : TestServerFixture
+    public class SuccessTests : TestServerFixture
     {
         [Fact]
         public async Task CreateCustomer_Should_Return_Success()

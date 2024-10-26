@@ -6,7 +6,7 @@ using Xunit;
 
 namespace Customers.Test.Integration.CreateCustomer
 {
-    public class CreateCustomerFailureTest : TestServerFixture
+    public class FailureTests : TestServerFixture
     {
         [Fact]
         public async Task CreateCustomer_Should_Return_Invalid_Parameters_If_Invalid_Request()

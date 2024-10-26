@@ -6,7 +6,7 @@ using Xunit;
 
 namespace Customers.Test.Integration.UpdateCustomer
 {
-    public class UpdateCustomerFailureTest : TestServerFixture
+    public class FailureTests : TestServerFixture
     {
         [Fact]
         public async Task UpdateCustomer_Should_Return_NotFound_If_Invalid_Customer_Id()

@@ -1,6 +1,5 @@
 ﻿using Customers.Infrastructure;
 using Customers.Infrastructure.Database.Entities;
-using Customers.Infrastructure.Models;
 using Customers.Infrastructure.Ports;
 using FluentAssertions;
 using Microsoft.Extensions.Logging;

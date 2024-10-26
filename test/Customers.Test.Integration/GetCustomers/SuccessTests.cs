@@ -1,18 +1,15 @@
-﻿using Customers.Domain.Models;
-using Customers.Test.Integration.Fixtures;
-using Customers.Test.Integration.Utils;
+﻿using Customers.Test.Integration.Fixtures;
 using FluentAssertions;
 using System.Net;
 using System.Net.Http.Json;
-using System.Text.Json;
 using Xunit;
 
-namespace Customers.Test.Integration.DeleteCustomer
+namespace Customers.Test.Integration.GetCustomers
 {
-    public class DeleteCustomerSuccessTest : TestServerFixture
+    public class SuccessTests : TestServerFixture
     {
         [Fact]
-        public async Task DeleteCustomer_Should_Return_Success()
+        public async Task GetCustomers_Should_Return_Success()
         {
             // Arrange
             var client = Server.CreateClient();
@@ -25,13 +22,12 @@ namespace Customers.Test.Integration.DeleteCustomer
                 };
 
             var response = await client.PostAsJsonAsync("v3/customers/add", customerRequest);
-            var body = await response.Content.ReadAsStringAsync();
-            var customerDetails = JsonSerializer.Deserialize<Customer>(body, Serilization.JsonSerializerOptions);
 
             // Act
-            var results = await client.DeleteAsync($"v3/customers/{customerDetails?.CustomerId}");
+            var results = await client.GetAsync("v3/customers");
 
             // Assert
+            response.StatusCode.Should().Be(HttpStatusCode.Created);
             results.StatusCode.Should().Be(HttpStatusCode.OK);
         }
     }

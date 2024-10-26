@@ -7,12 +7,12 @@ using System.Net.Http.Json;
 using System.Text.Json;
 using Xunit;
 
-namespace Customers.Test.Integration.UpdateCustomer
+namespace Customers.Test.Integration.GetCustomer
 {
-    public class UpdateCustomerSuccessTest : TestServerFixture
+    public class SuccessTests : TestServerFixture
     {
         [Fact]
-        public async Task UpdateCustomer_Should_Return_Success()
+        public async Task GetCustomer_Should_Return_Success()
         {
             // Arrange
             var client = Server.CreateClient();
@@ -28,25 +28,11 @@ namespace Customers.Test.Integration.UpdateCustomer
             var body = await response.Content.ReadAsStringAsync();
             var customerDetails = JsonSerializer.Deserialize<Customer>(body, Serilization.JsonSerializerOptions);
 
-            var updateCustomerRequest = CustomerRequest(customerDetails!.CustomerId, firstName: "Robert");
-
             // Act
-            var results = await client.PutAsJsonAsync($"v3/customers/update", updateCustomerRequest);
+            var results = await client.GetAsync($"v3/customers/{customerDetails.CustomerId}");
 
             // Assert
             results.StatusCode.Should().Be(HttpStatusCode.OK);
-        }
-
-        private object CustomerRequest(Guid customerId ,string? firstName = "John", string? lastName = "Doe",
-           string? email = "test@gmail.com")
-        {
-            return new
-            {
-                id = customerId,
-                first_name = firstName,
-                last_name = lastName,
-                email = email,
-            };
         }
     }
 }

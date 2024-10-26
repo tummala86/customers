@@ -1,12 +1,11 @@
 ﻿using Customers.Test.Integration.Fixtures;
 using FluentAssertions;
 using System.Net;
-using System.Net.Http.Json;
 using Xunit;
 
 namespace Customers.Test.Integration.GetCustomer
 {
-    public class GetCustomerFailureTest : TestServerFixture
+    public class FailureTests : TestServerFixture
     {
         [Fact]
         public async Task GetCustomer_Should_Return_NotFound_If_Invalid_Customer_Id()
