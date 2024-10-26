@@ -171,7 +171,10 @@
           "OneOf.SourceGenerator": "3.0.255"
         },
         "runtime": {
-          "Customers.Domain.dll": {}
+          "Customers.Domain.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Customers.Infrastructure/1.0.0": {
@@ -181,7 +184,10 @@
           "Microsoft.EntityFrameworkCore.InMemory": "7.0.8"
         },
         "runtime": {
-          "Customers.Infrastructure.dll": {}
+          "Customers.Infrastructure.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

@@ -23,9 +23,9 @@ C:\Users\tumma\OneDrive\Desktop\Pinewood\Customers\customers\src\Api\Customers.I
 C:\Users\tumma\OneDrive\Desktop\Pinewood\Customers\customers\src\Api\Customers.Infrastructure\obj\Debug\net7.0\Customers.Infrastructure.AssemblyInfoInputs.cache
 C:\Users\tumma\OneDrive\Desktop\Pinewood\Customers\customers\src\Api\Customers.Infrastructure\obj\Debug\net7.0\Customers.Infrastructure.AssemblyInfo.cs
 C:\Users\tumma\OneDrive\Desktop\Pinewood\Customers\customers\src\Api\Customers.Infrastructure\obj\Debug\net7.0\Customers.Infrastructure.csproj.CoreCompileInputs.cache
-C:\Users\tumma\OneDrive\Desktop\Pinewood\Customers\customers\src\Api\Customers.Infrastructure\obj\Debug\net7.0\Customers.Infrastructure.csproj.CopyComplete
+C:\Users\tumma\OneDrive\Desktop\Pinewood\Customers\customers\src\Api\Customers.Infrastructure\obj\Debug\net7.0\Customers.Infrastructure.sourcelink.json
+C:\Users\tumma\OneDrive\Desktop\Pinewood\Customers\customers\src\Api\Customers.Infrastructure\obj\Debug\net7.0\Customer.A95C0A9A.Up2Date
 C:\Users\tumma\OneDrive\Desktop\Pinewood\Customers\customers\src\Api\Customers.Infrastructure\obj\Debug\net7.0\Customers.Infrastructure.dll
 C:\Users\tumma\OneDrive\Desktop\Pinewood\Customers\customers\src\Api\Customers.Infrastructure\obj\Debug\net7.0\refint\Customers.Infrastructure.dll
 C:\Users\tumma\OneDrive\Desktop\Pinewood\Customers\customers\src\Api\Customers.Infrastructure\obj\Debug\net7.0\Customers.Infrastructure.pdb
 C:\Users\tumma\OneDrive\Desktop\Pinewood\Customers\customers\src\Api\Customers.Infrastructure\obj\Debug\net7.0\ref\Customers.Infrastructure.dll
-C:\Users\tumma\OneDrive\Desktop\Pinewood\Customers\customers\src\Api\Customers.Infrastructure\obj\Debug\net7.0\Customers.Infrastructure.sourcelink.json

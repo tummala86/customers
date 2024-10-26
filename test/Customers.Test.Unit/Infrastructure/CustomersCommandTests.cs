@@ -3,6 +3,7 @@ using Customers.Infrastructure.Database.Entities;
 using Customers.Infrastructure.Models;
 using Customers.Infrastructure.Ports;
 using FluentAssertions;
+using Microsoft.Extensions.Logging;
 using Moq;
 using Xunit;
 using DomainCustomer = Customers.Domain.Models.Customer;
@@ -13,25 +14,25 @@ namespace Customers.API.Test.Unit.Infrastructure
     {
         private readonly CustomersCommand _sut;
         private readonly Mock<ICustomerRepository> _customerRepository = new();
-
+        private readonly Mock<ILogger<CustomersCommand>> _mockLogger = new();
         public CustomersCommandTests()
         {
-            _sut = new CustomersCommand(_customerRepository.Object);
+            _sut = new CustomersCommand(_customerRepository.Object, _mockLogger.Object);
         }
 
         [Fact]
         public async Task SaveCustomer_Should_Retrun_Internal_Error()
         {
             // Arrange
-            _customerRepository.Setup(x => x.InsertAsync(It.IsAny<DomainCustomer>()))
-                .ReturnsAsync(() => new CreateCustomerResponse.InternalError("Internal error"));
+            _customerRepository.Setup(x => x.InsertAsync(It.IsAny<Customer>()))
+                .ReturnsAsync(() => throw new Exception("Internal error"));
 
             // Act
             var result = await _sut.SaveCustomer(CreateCustomerRequest());
 
             // Assert
             result.IsInternalError.Should().BeTrue();
-            _customerRepository.Verify(d => d.InsertAsync(It.IsAny<DomainCustomer>()), Times.Once());
+            _customerRepository.Verify(d => d.InsertAsync(It.IsAny<Customer>()), Times.Once());
         }
 
         [Fact]
@@ -47,45 +48,46 @@ namespace Customers.API.Test.Unit.Infrastructure
                 Email = "John@gmail.com"
             };
 
-            _customerRepository.Setup(x => x.InsertAsync(It.IsAny<DomainCustomer>()))
-                .ReturnsAsync(() => new CreateCustomerResponse.Success(customerDetails));
+            _customerRepository.Setup(x => x.InsertAsync(It.IsAny<Customer>()))
+                .ReturnsAsync(customerDetails);
 
             // Act
             var result = await _sut.SaveCustomer(customerRequest);
 
             // Assert
             result.IsSuccess.Should().BeTrue();
-            _customerRepository.Verify(d => d.InsertAsync(It.IsAny<DomainCustomer>()), Times.Once());
+            _customerRepository.Verify(d => d.InsertAsync(It.IsAny<Customer>()), Times.Once());
         }
 
         [Fact]
         public async Task UpdateCustomer_Should_Retrun_Internal_Error()
         {
             // Arrange
-            _customerRepository.Setup(x => x.UpdateAsync(It.IsAny<DomainCustomer>()))
-                .ReturnsAsync(() => new UpdateCustomerResponse.InternalError("Internal error"));
+            _customerRepository.Setup(x => x.UpdateAsync(It.IsAny<Customer>()))
+                .ReturnsAsync(() => throw new Exception("Internal error"));
 
             // Act
             var result = await _sut.UpdateCustomer(CreateCustomerRequest());
 
             // Assert
             result.IsInternalError.Should().BeTrue();
-            _customerRepository.Verify(d => d.UpdateAsync(It.IsAny<DomainCustomer>()), Times.Once());
+            _customerRepository.Verify(d => d.UpdateAsync(It.IsAny<Customer>()), Times.Once());
         }
 
         [Fact]
         public async Task UpdateCustomer_Should_Retrun_Customer_Not_Found_Error()
         {
             // Arrange
-            _customerRepository.Setup(x => x.UpdateAsync(It.IsAny<DomainCustomer>()))
-                .ReturnsAsync(() => new UpdateCustomerResponse.NotFound());
+            Customer? customerDetails = null;
+            _customerRepository.Setup(x => x.UpdateAsync(It.IsAny<Customer>()))
+                .ReturnsAsync(customerDetails);
 
             // Act
             var result = await _sut.UpdateCustomer(CreateCustomerRequest());
 
             // Assert
             result.IsNotFound.Should().BeTrue();
-            _customerRepository.Verify(d => d.UpdateAsync(It.IsAny<DomainCustomer>()), Times.Once());
+            _customerRepository.Verify(d => d.UpdateAsync(It.IsAny<Customer>()), Times.Once());
         }
 
         [Fact]
@@ -102,15 +104,15 @@ namespace Customers.API.Test.Unit.Infrastructure
                 Email = "John@gmail.com"
             };
 
-            _customerRepository.Setup(x => x.UpdateAsync(It.IsAny<DomainCustomer>()))
-                .ReturnsAsync(() => new UpdateCustomerResponse.Success(customerDetails));
+            _customerRepository.Setup(x => x.UpdateAsync(It.IsAny<Customer>()))
+                .ReturnsAsync(customerDetails);
 
             // Act
             var result = await _sut.UpdateCustomer(customerRequest);
 
             // Assert
             result.IsSuccess.Should().BeTrue();
-            _customerRepository.Verify(d => d.UpdateAsync(It.IsAny<DomainCustomer>()), Times.Once());
+            _customerRepository.Verify(d => d.UpdateAsync(It.IsAny<Customer>()), Times.Once());
         }
 
         [Fact]
@@ -118,7 +120,7 @@ namespace Customers.API.Test.Unit.Infrastructure
         {
             // Arrange
             _customerRepository.Setup(x => x.DeleteAsync(It.IsAny<Guid>()))
-                .ReturnsAsync(() => new UpdateCustomerResponse.InternalError("Internal error"));
+                .ReturnsAsync(() => throw new Exception("Internal error"));
 
             var customerId = Guid.NewGuid();
 
@@ -134,8 +136,9 @@ namespace Customers.API.Test.Unit.Infrastructure
         public async Task DeleteCustomer_Should_Retrun_Customer_NotFound_Error()
         {
             // Arrange
+            Customer? customer = null;
             _customerRepository.Setup(x => x.DeleteAsync(It.IsAny<Guid>()))
-                .ReturnsAsync(() => new UpdateCustomerResponse.NotFound());
+                .ReturnsAsync(customer);
 
             var customerId = Guid.NewGuid();
 
@@ -162,7 +165,7 @@ namespace Customers.API.Test.Unit.Infrastructure
             };
 
             _customerRepository.Setup(x => x.DeleteAsync(It.IsAny<Guid>()))
-                .ReturnsAsync(() => new UpdateCustomerResponse.Success(customerDetails));
+                .ReturnsAsync(customerDetails);
             
 
             // Act

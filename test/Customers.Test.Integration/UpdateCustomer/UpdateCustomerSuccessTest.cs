@@ -1,5 +1,6 @@
 ﻿using Customers.Domain.Models;
 using Customers.Test.Integration.Fixtures;
+using Customers.Test.Integration.Utils;
 using FluentAssertions;
 using System.Net;
 using System.Net.Http.Json;
@@ -23,14 +24,14 @@ namespace Customers.Test.Integration.UpdateCustomer
                     email = "test@gmail.com",
                 };
 
-            var response = await client.PostAsJsonAsync("v3/customers/update", customerRequest);
+            var response = await client.PostAsJsonAsync("v3/customers/add", customerRequest);
             var body = await response.Content.ReadAsStringAsync();
-            var customerDetails = JsonSerializer.Deserialize<Customer>(body);
+            var customerDetails = JsonSerializer.Deserialize<Customer>(body, Serilization.JsonSerializerOptions);
 
             var updateCustomerRequest = CustomerRequest(customerDetails!.CustomerId, firstName: "Robert");
 
             // Act
-            var results = await client.PutAsJsonAsync($"v3/customers", updateCustomerRequest);
+            var results = await client.PutAsJsonAsync($"v3/customers/update", updateCustomerRequest);
 
             // Assert
             results.StatusCode.Should().Be(HttpStatusCode.OK);

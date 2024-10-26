@@ -153,7 +153,10 @@
           "OneOf.SourceGenerator": "3.0.255"
         },
         "runtime": {
-          "Customers.Domain.dll": {}
+          "Customers.Domain.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

@@ -3,6 +3,7 @@ using Customers.Infrastructure.Database.Entities;
 using Customers.Infrastructure.Models;
 using Customers.Infrastructure.Ports;
 using FluentAssertions;
+using Microsoft.Extensions.Logging;
 using Moq;
 using Xunit;
 
@@ -12,10 +13,11 @@ namespace Customers.API.Test.Unit.Infrastructure
     {
         private readonly GetCustomersQuery _sut;
         private readonly Mock<ICustomerRepository> _customerRepository = new();
+        private readonly Mock<ILogger<GetCustomersQuery>> _logger = new();
 
         public GetCustomersQueryTests()
         {
-            _sut = new GetCustomersQuery(_customerRepository.Object);
+            _sut = new GetCustomersQuery(_customerRepository.Object, _logger.Object);
         }
 
         [Fact]
@@ -23,7 +25,7 @@ namespace Customers.API.Test.Unit.Infrastructure
         {
             // Arrange
             _customerRepository.Setup(x => x.GetAllAsync())
-                .ReturnsAsync(() => new GetCustomersResponse.InternalError("Internal error"));
+                .ReturnsAsync(() => throw new Exception("Internal error"));
 
             // Act
             var result = await _sut.GetAllCustomers();
@@ -38,7 +40,7 @@ namespace Customers.API.Test.Unit.Infrastructure
         {
             // Arrange
             _customerRepository.Setup(x => x.GetAllAsync())
-                .ReturnsAsync(() => new GetCustomersResponse.Success(new List<Customer>()));
+                .ReturnsAsync(new List<Customer>());
 
             // Act
             var result = await _sut.GetAllCustomers();
@@ -54,7 +56,7 @@ namespace Customers.API.Test.Unit.Infrastructure
             // Arrange
             var customerId = Guid.NewGuid();
             _customerRepository.Setup(x => x.GetByIdAsync(It.IsAny<Guid>()))
-                .ReturnsAsync(() => new GetCustomerResponse.InternalError("Internal error"));
+                .ReturnsAsync(() => throw new Exception("Internal error"));
 
             var getCustomerRequest = new Customers.Domain.Models.GetCustomerRequest(customerId);
 
@@ -72,8 +74,10 @@ namespace Customers.API.Test.Unit.Infrastructure
             // Arrange
             var customerId = Guid.NewGuid();
 
+            Customer? customer = null;
+
             _customerRepository.Setup(x => x.GetByIdAsync(It.IsAny<Guid>()))
-                .ReturnsAsync(() => new GetCustomerResponse.NotFound());
+                .ReturnsAsync(customer);
 
             var getCustomerRequest = new Customers.Domain.Models.GetCustomerRequest(customerId);
 
@@ -99,7 +103,7 @@ namespace Customers.API.Test.Unit.Infrastructure
             };
 
             _customerRepository.Setup(x => x.GetByIdAsync(It.IsAny<Guid>()))
-                .ReturnsAsync(() => new GetCustomerResponse.Success(customerDetails));
+                .ReturnsAsync(customerDetails);
 
             var getCustomerRequest = new Customers.Domain.Models.GetCustomerRequest(customerId);
 

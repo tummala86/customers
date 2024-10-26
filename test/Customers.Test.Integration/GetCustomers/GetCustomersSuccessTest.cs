@@ -23,13 +23,13 @@ namespace Customers.Test.Integration.GetCustomers
                     email = "test@gmail.com",
                 };
 
-            var response = await client.PostAsJsonAsync("v3/customers", customerRequest);
+            var response = await client.PostAsJsonAsync("v3/customers/add", customerRequest);
 
             // Act
-            var results = await client.GetAsync($"v3/customers");
+            var results = await client.GetAsync("v3/customers");
 
             // Assert
-            response.StatusCode.Should().Be(HttpStatusCode.OK);
+            response.StatusCode.Should().Be(HttpStatusCode.Created);
             results.StatusCode.Should().Be(HttpStatusCode.OK);
         }
     }

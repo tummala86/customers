@@ -60,9 +60,10 @@ C:\Users\tumma\OneDrive\Desktop\Pinewood\Customers\customers\src\WebApp\Customer
 C:\Users\tumma\OneDrive\Desktop\Pinewood\Customers\customers\src\WebApp\Customers.WebApp\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\tumma\OneDrive\Desktop\Pinewood\Customers\customers\src\WebApp\Customers.WebApp\obj\Debug\net7.0\scopedcss\bundle\Customers.WebApp.styles.css
 C:\Users\tumma\OneDrive\Desktop\Pinewood\Customers\customers\src\WebApp\Customers.WebApp\obj\Debug\net7.0\scopedcss\projectbundle\Customers.WebApp.bundle.scp.css
-C:\Users\tumma\OneDrive\Desktop\Pinewood\Customers\customers\src\WebApp\Customers.WebApp\obj\Debug\net7.0\Customers.WebApp.csproj.CopyComplete
 C:\Users\tumma\OneDrive\Desktop\Pinewood\Customers\customers\src\WebApp\Customers.WebApp\obj\Debug\net7.0\Customers.WebApp.dll
 C:\Users\tumma\OneDrive\Desktop\Pinewood\Customers\customers\src\WebApp\Customers.WebApp\obj\Debug\net7.0\refint\Customers.WebApp.dll
 C:\Users\tumma\OneDrive\Desktop\Pinewood\Customers\customers\src\WebApp\Customers.WebApp\obj\Debug\net7.0\Customers.WebApp.pdb
 C:\Users\tumma\OneDrive\Desktop\Pinewood\Customers\customers\src\WebApp\Customers.WebApp\obj\Debug\net7.0\Customers.WebApp.genruntimeconfig.cache
 C:\Users\tumma\OneDrive\Desktop\Pinewood\Customers\customers\src\WebApp\Customers.WebApp\obj\Debug\net7.0\ref\Customers.WebApp.dll
+C:\Users\tumma\OneDrive\Desktop\Pinewood\Customers\customers\src\WebApp\Customers.WebApp\obj\Debug\net7.0\Customers.WebApp.sourcelink.json
+C:\Users\tumma\OneDrive\Desktop\Pinewood\Customers\customers\src\WebApp\Customers.WebApp\obj\Debug\net7.0\Customer.18D63FBB.Up2Date

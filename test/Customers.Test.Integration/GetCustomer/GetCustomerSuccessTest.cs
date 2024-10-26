@@ -1,5 +1,6 @@
 ﻿using Customers.Domain.Models;
 using Customers.Test.Integration.Fixtures;
+using Customers.Test.Integration.Utils;
 using FluentAssertions;
 using System.Net;
 using System.Net.Http.Json;
@@ -23,9 +24,9 @@ namespace Customers.Test.Integration.UpdateCustomer
                     email = "test@gmail.com",
                 };
 
-            var response = await client.PostAsJsonAsync("v3/customers", customerRequest);
+            var response = await client.PostAsJsonAsync("v3/customers/add", customerRequest);
             var body = await response.Content.ReadAsStringAsync();
-            var customerDetails = JsonSerializer.Deserialize<Customer>(body);
+            var customerDetails = JsonSerializer.Deserialize<Customer>(body, Serilization.JsonSerializerOptions);
 
             // Act
             var results = await client.GetAsync($"v3/customers/{customerDetails.CustomerId}");

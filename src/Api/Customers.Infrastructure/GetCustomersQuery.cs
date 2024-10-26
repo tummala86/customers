@@ -2,35 +2,62 @@
 using Customers.Domain.Ports;
 using Customers.Infrastructure.Extensions;
 using Customers.Infrastructure.Ports;
+using Microsoft.Extensions.Logging;
 
 namespace Customers.Infrastructure
 {
     public class GetCustomersQuery : IGetCustomersQuery
     {
         private readonly ICustomerRepository _customerRepository;
+        private readonly ILogger<GetCustomersQuery> _logger;
 
-        public GetCustomersQuery(ICustomerRepository customerRepository)
+        public GetCustomersQuery(
+            ICustomerRepository customerRepository,
+            ILogger<GetCustomersQuery> logger)
         {
             _customerRepository = customerRepository;
+            _logger = logger;
         }
 
         public async Task<GetCustomerResponse> GetCustomerById(GetCustomerRequest request)
         {
-            var getCustomerResponse = await _customerRepository.GetByIdAsync(request.Id);
+            try
+            {
+                var getCustomerResponse = await _customerRepository.GetByIdAsync(request.Id);
 
-            return getCustomerResponse.Match<GetCustomerResponse>(
-                success => new GetCustomerResponse.Success(success.Customer!.ToDomainCustomer()),
-                notFound => new GetCustomerResponse.NotFound(),
-                internalError => new GetCustomerResponse.InternalError(internalError.ErrorMessage));
+                if (getCustomerResponse is not null) 
+                {
+                    return new GetCustomerResponse.Success(getCustomerResponse.ToDomainCustomer());
+                }
+
+                return new GetCustomerResponse.NotFound();
+                   
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, $"There is an error while fetching the customer : {request.Id}");
+                return new GetCustomerResponse.InternalError(ex.Message);
+            }
         }
 
         public async Task<GetCustomersResponse> GetAllCustomers()
         {
-            var getCustomersResponse = await _customerRepository.GetAllAsync();
+            try
+            {
+                var getCustomersResponse = await _customerRepository.GetAllAsync();
 
-            return getCustomersResponse.Match<GetCustomersResponse>(
-                success => new GetCustomersResponse.Success(success.Customers!.ToDomainCustomers()),
-                internalError => new GetCustomersResponse.InternalError(internalError.ErrorMessage));
+                if(getCustomersResponse is not null)
+                {
+                    return new GetCustomersResponse.Success(getCustomersResponse.ToDomainCustomers());
+                }
+
+               return new GetCustomersResponse.InternalError("There is an error while fetching get all customers");
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, $"There is an error while fetching get all customers");
+                return new GetCustomersResponse.InternalError(ex.Message);
+            }
         }
     }
 }

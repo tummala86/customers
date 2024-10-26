@@ -125,9 +125,10 @@ C:\Users\tumma\OneDrive\Desktop\Pinewood\Customers\customers\test\Customers.Test
 C:\Users\tumma\OneDrive\Desktop\Pinewood\Customers\customers\test\Customers.Test.Unit\obj\Debug\net7.0\Customers.API.Test.Unit.AssemblyInfoInputs.cache
 C:\Users\tumma\OneDrive\Desktop\Pinewood\Customers\customers\test\Customers.Test.Unit\obj\Debug\net7.0\Customers.API.Test.Unit.AssemblyInfo.cs
 C:\Users\tumma\OneDrive\Desktop\Pinewood\Customers\customers\test\Customers.Test.Unit\obj\Debug\net7.0\Customers.API.Test.Unit.csproj.CoreCompileInputs.cache
-C:\Users\tumma\OneDrive\Desktop\Pinewood\Customers\customers\test\Customers.Test.Unit\obj\Debug\net7.0\Customers.API.Test.Unit.csproj.CopyComplete
 C:\Users\tumma\OneDrive\Desktop\Pinewood\Customers\customers\test\Customers.Test.Unit\obj\Debug\net7.0\Customers.API.Test.Unit.dll
 C:\Users\tumma\OneDrive\Desktop\Pinewood\Customers\customers\test\Customers.Test.Unit\obj\Debug\net7.0\refint\Customers.API.Test.Unit.dll
 C:\Users\tumma\OneDrive\Desktop\Pinewood\Customers\customers\test\Customers.Test.Unit\obj\Debug\net7.0\Customers.API.Test.Unit.pdb
 C:\Users\tumma\OneDrive\Desktop\Pinewood\Customers\customers\test\Customers.Test.Unit\obj\Debug\net7.0\Customers.API.Test.Unit.genruntimeconfig.cache
 C:\Users\tumma\OneDrive\Desktop\Pinewood\Customers\customers\test\Customers.Test.Unit\obj\Debug\net7.0\ref\Customers.API.Test.Unit.dll
+C:\Users\tumma\OneDrive\Desktop\Pinewood\Customers\customers\test\Customers.Test.Unit\obj\Debug\net7.0\Customers.API.Test.Unit.sourcelink.json
+C:\Users\tumma\OneDrive\Desktop\Pinewood\Customers\customers\test\Customers.Test.Unit\obj\Debug\net7.0\Customer.23086766.Up2Date
