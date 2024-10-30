@@ -27,7 +27,7 @@ The web application used to manage customers information.
 
 This project relies on the following dependencies:
 
-* [.NET 7](https://dotnet.microsoft.com/en-us/download/dotnet/7.0)
+* [.NET 8](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
 * [Entity Framework Core](https://learn.microsoft.com/en-us/ef/core/providers/in-memory/?tabs=dotnet-core-cli)
 * [Docker](https://www.docker.com/) (optional, required for running the project in Docker).
 
