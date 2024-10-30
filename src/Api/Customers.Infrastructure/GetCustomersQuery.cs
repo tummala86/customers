@@ -55,7 +55,7 @@ namespace Customers.Infrastructure
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, $"There is an error while fetching get all customers");
+                _logger.LogError(ex, "There is an error while fetching get all customers");
                 return new GetCustomersResponse.InternalError(ex.Message);
             }
         }

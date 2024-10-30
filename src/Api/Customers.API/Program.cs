@@ -44,11 +44,8 @@ app.UseAuthorization();
 
 app.UseMiddleware<ExceptionHandlingMiddleware>();
 
-app.UseEndpoints(endpoints =>
-{
-    endpoints.MapControllers();
-    endpoints.MapHealthChecks(ApiRoutes.HealthChecks.Internal);
-});
+app.MapControllers();
+app.UseHealthChecks(ApiRoutes.HealthChecks.Internal);
 
 app.Run();
 

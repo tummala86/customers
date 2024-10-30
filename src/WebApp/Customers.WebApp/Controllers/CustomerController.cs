@@ -31,7 +31,7 @@ public class CustomerController : Controller
         }
         catch (Exception ex)
         {
-            _logger.LogError($"There is an error while retrieving the customers. Error: {ex}");
+            _logger.LogError(ex, $"There is an error while retrieving the customers.");
             return View("Error", new ErrorViewModel() { ErrorMessage = "Something went wrong. Please try again later" });
         }
     }
@@ -61,7 +61,7 @@ public class CustomerController : Controller
         }
         catch (Exception ex)
         {
-            _logger.LogError($"There is an error while adding the customer. Error: {ex}");
+            _logger.LogError(ex, $"There is an error while adding the customer.");
             return View("Error", new ErrorViewModel() { ErrorMessage = "Something went wrong. Please try again later" });
         }
     }
@@ -79,7 +79,7 @@ public class CustomerController : Controller
         }
         catch (Exception ex)
         {
-            _logger.LogError($"There is an error while retrieving the customer details.", ex);
+            _logger.LogError(ex, "There is an error while retrieving the customer details.");
             return View("Error", new ErrorViewModel() { ErrorMessage = "Something went wrong. Please try again later" });
         }
     }
@@ -102,7 +102,7 @@ public class CustomerController : Controller
         }
         catch (Exception ex)
         {
-            _logger.LogError($"There is an error while updating the customer details.", ex);
+            _logger.LogError(ex, "There is an error while updating the customer details.");
             return View("Error", new ErrorViewModel() { ErrorMessage = "Something went wrong. Please try again later" });
         }
     }
@@ -120,7 +120,7 @@ public class CustomerController : Controller
         }
         catch (Exception ex)
         {
-            _logger.LogError($"There is an error while retrieving the customer details.", ex);
+            _logger.LogError(ex, "There is an error while retrieving the customer details.");
             return View("Error", new ErrorViewModel() { ErrorMessage = "Something went wrong. Please try again later" });
         }
     }
@@ -138,7 +138,7 @@ public class CustomerController : Controller
         }
         catch (Exception ex)
         {
-            _logger.LogError($"There is an error while updating the customer details.", ex);
+            _logger.LogError(ex, "There is an error while updating the customer details.");
             return View("Error", new ErrorViewModel() { ErrorMessage = "Something went wrong. Please try again later" });
         }
     }
