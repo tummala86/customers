@@ -16,7 +16,7 @@ namespace Customers.Test.Integration.UpdateCustomer
         {
             // Arrange
             var client = Server.CreateClient();
-            var customerRequest=
+            var customerRequest =
                 new
                 {
                     first_name = "John",
@@ -37,7 +37,7 @@ namespace Customers.Test.Integration.UpdateCustomer
             results.StatusCode.Should().Be(HttpStatusCode.OK);
         }
 
-        private object CustomerRequest(Guid customerId ,string? firstName = "John", string? lastName = "Doe",
+        private object CustomerRequest(Guid customerId, string? firstName = "John", string? lastName = "Doe",
            string? email = "test@gmail.com")
         {
             return new

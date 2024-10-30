@@ -13,7 +13,7 @@ namespace Customers.Test.Integration.CreateCustomer
         {
             // Arrange
             var client = Server.CreateClient();
-            var customerRequest=
+            var customerRequest =
                 new
                 {
                     first_name = "John",
@@ -25,7 +25,7 @@ namespace Customers.Test.Integration.CreateCustomer
             var response = await client.PostAsJsonAsync("v3/customers/add", customerRequest);
 
             // Assert
-            response.StatusCode.Should().Be(HttpStatusCode.Created); 
+            response.StatusCode.Should().Be(HttpStatusCode.Created);
             var body = await response.Content.ReadAsStringAsync();
             body.Should().NotBeNull();
         }

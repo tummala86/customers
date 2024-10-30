@@ -8,7 +8,7 @@ using System.Text.Json.Serialization;
 
 namespace Customers.WebApp.Infrastructure;
 
-public class CustomerClient: ICustomerClient
+public class CustomerClient : ICustomerClient
 {
     private readonly HttpClient _httpClient;
     private readonly JsonSerializerOptions jsonSerializerOptions = new JsonSerializerOptions
@@ -41,7 +41,7 @@ public class CustomerClient: ICustomerClient
             return new GetCustomerResponse.Error(problemDetails?.Detail!);
 
         }
-        catch(Exception ex)
+        catch (Exception ex)
         {
             return new GetCustomerResponse.Error(ex.Message);
         }
@@ -64,7 +64,7 @@ public class CustomerClient: ICustomerClient
             var problemDetails = JsonSerializer.Deserialize<ProblemDetails>(content, jsonSerializerOptions);
             return new GetCustomersResponse.Error(problemDetails?.Detail!);
         }
-        catch(Exception ex)
+        catch (Exception ex)
         {
             return new GetCustomersResponse.Error(ex.Message);
         }
@@ -74,10 +74,11 @@ public class CustomerClient: ICustomerClient
     {
         try
         {
-            var customerRequest = new CustomerRequest{
-               FirstName= customer.FirstName, 
-               LastName= customer.LastName, 
-               Email = customer.Email 
+            var customerRequest = new CustomerRequest
+            {
+                FirstName = customer.FirstName,
+                LastName = customer.LastName,
+                Email = customer.Email
             };
 
             string data = JsonSerializer.Serialize(customerRequest, jsonSerializerOptions);

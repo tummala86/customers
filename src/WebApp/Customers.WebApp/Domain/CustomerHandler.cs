@@ -3,7 +3,7 @@ using Customers.WebApp.Infrastructure;
 
 namespace Customers.WebApp.Domain;
 
-public class CustomerHandler: ICustomerHandler
+public class CustomerHandler : ICustomerHandler
 {
     private readonly ICustomerClient _customerClient;
 
@@ -33,7 +33,7 @@ public class CustomerHandler: ICustomerHandler
         return await _customerClient.UpdateCustomer(customer);
     }
 
-    public async Task<UpdateCustomerResponse>DeleteCustomer(string id)
+    public async Task<UpdateCustomerResponse> DeleteCustomer(string id)
     {
         return await _customerClient.DeleteCustomer(id);
     }

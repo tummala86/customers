@@ -16,7 +16,7 @@ namespace Customers.Domain.Validators
 
         public static ValidationResult ValidateFieldLenght(string fieldName, string? value, int allowedLimit)
             => !string.IsNullOrWhiteSpace(value) && value.Length > allowedLimit
-            ? StandardParameterErrors.InvalidValueLength(fieldName,allowedLimit)
+            ? StandardParameterErrors.InvalidValueLength(fieldName, allowedLimit)
             : new ValidationResult.Success();
 
         public static ValidationResult ValidateEmailId(string fieldName, string value)

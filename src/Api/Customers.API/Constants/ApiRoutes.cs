@@ -5,7 +5,7 @@ namespace Customers.API.Constants
         // API Version standards
         public const string Version = "v3";
 
-        public const string Base = Version+ "/customers";
+        public const string Base = Version + "/customers";
 
         public static class HealthChecks
         {

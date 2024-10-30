@@ -165,7 +165,7 @@ namespace Customers.API.Test.Unit.Infrastructure
 
             _customerRepository.Setup(x => x.DeleteAsync(It.IsAny<Guid>()))
                 .ReturnsAsync(customerDetails);
-            
+
 
             // Act
             var result = await _sut.DeleteCustomer(customerId);

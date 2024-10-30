@@ -13,7 +13,7 @@ namespace Customers.Test.Integration.GetCustomers
         {
             // Arrange
             var client = Server.CreateClient();
-            var customerRequest=
+            var customerRequest =
                 new
                 {
                     first_name = "John",

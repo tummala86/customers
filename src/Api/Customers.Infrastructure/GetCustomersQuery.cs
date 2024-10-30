@@ -25,13 +25,13 @@ namespace Customers.Infrastructure
             {
                 var getCustomerResponse = await _customerRepository.GetByIdAsync(request.Id);
 
-                if (getCustomerResponse is not null) 
+                if (getCustomerResponse is not null)
                 {
                     return new GetCustomerResponse.Success(getCustomerResponse.ToDomainCustomer());
                 }
 
                 return new GetCustomerResponse.NotFound();
-                   
+
             }
             catch (Exception ex)
             {
@@ -46,12 +46,12 @@ namespace Customers.Infrastructure
             {
                 var getCustomersResponse = await _customerRepository.GetAllAsync();
 
-                if(getCustomersResponse is not null)
+                if (getCustomersResponse is not null)
                 {
                     return new GetCustomersResponse.Success(getCustomersResponse.ToDomainCustomers());
                 }
 
-               return new GetCustomersResponse.InternalError("There is an error while fetching get all customers");
+                return new GetCustomersResponse.InternalError("There is an error while fetching get all customers");
             }
             catch (Exception ex)
             {

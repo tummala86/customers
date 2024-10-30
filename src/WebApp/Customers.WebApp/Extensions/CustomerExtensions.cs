@@ -7,7 +7,8 @@ namespace Customers.WebApp.Extensions
     {
         public static IEnumerable<CustomerModel> ToCustomersViewModel(this IEnumerable<Customer> customers)
         {
-            return customers.Select(c => new CustomerModel() {
+            return customers.Select(c => new CustomerModel()
+            {
                 Id = c.CustomerId,
                 FirstName = c.FirstName,
                 LastName = c.LastName,
@@ -30,5 +31,5 @@ namespace Customers.WebApp.Extensions
         {
             return new Customer(customer.Id, customer.FirstName, customer.LastName, customer.Email);
         }
-     }
+    }
 }

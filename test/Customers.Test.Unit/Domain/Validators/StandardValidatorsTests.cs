@@ -23,9 +23,9 @@ namespace Customers.API.Test.Unit.Domain.Validators
         }
 
         [Theory]
-        [InlineData("FirstName", "JohnJohnJohn",5, false)]
-        [InlineData("FirstName", "John",5, true)]
-        public void Should_Validate_FieldLength(string fieldName, string? value,int allowedLength, bool isValid)
+        [InlineData("FirstName", "JohnJohnJohn", 5, false)]
+        [InlineData("FirstName", "John", 5, true)]
+        public void Should_Validate_FieldLength(string fieldName, string? value, int allowedLength, bool isValid)
         {
             StandardValidators.ValidateFieldLenght(fieldName, value, allowedLength).IsSuccess.Should().Be(isValid);
         }

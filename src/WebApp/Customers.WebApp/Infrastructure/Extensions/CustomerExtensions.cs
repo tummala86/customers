@@ -15,5 +15,5 @@ namespace Customers.WebApp.Infrastructure.Extensions
         {
             return new Customer(customer.Id, customer.FirstName, customer.LastName, customer.Email);
         }
-     }
+    }
 }

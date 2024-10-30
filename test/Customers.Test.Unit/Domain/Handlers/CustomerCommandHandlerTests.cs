@@ -125,7 +125,7 @@ namespace Customers.API.Test.Unit.Domain.Handlers
 
             // Assert
             result.IsNotFound.Should().BeTrue();
-            _customerCommand.Verify(d => d.DeleteCustomer(It.IsAny<Guid>()),Times.Once());
+            _customerCommand.Verify(d => d.DeleteCustomer(It.IsAny<Guid>()), Times.Once());
         }
 
         [Fact]
@@ -148,7 +148,7 @@ namespace Customers.API.Test.Unit.Domain.Handlers
 
         private Customer CreateCustomer()
         {
-            return new Customer(Guid.NewGuid(),"John", "Doe", "John@gmail.com");
+            return new Customer(Guid.NewGuid(), "John", "Doe", "John@gmail.com");
         }
     }
 }

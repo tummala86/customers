@@ -49,14 +49,15 @@ namespace Customers.Infrastructure
                 var customerDbEntity = domainCustomer.ToCustomerDbEntity();
                 var createCustomerResponse = await _customerRepository.InsertAsync(customerDbEntity);
 
-                if (createCustomerResponse is not null) 
+                if (createCustomerResponse is not null)
                 {
                     return new CreateCustomerResponse.Success(createCustomerResponse.ToDomainCustomer());
                 }
 
                 return new CreateCustomerResponse.InternalError("There is an error while saving the customer");
             }
-            catch (Exception ex) {
+            catch (Exception ex)
+            {
                 _logger.LogError(ex, "There is an error while saving the customer");
                 return new CreateCustomerResponse.InternalError(ex.Message);
             }

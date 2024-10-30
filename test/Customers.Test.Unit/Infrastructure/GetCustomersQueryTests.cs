@@ -94,11 +94,12 @@ namespace Customers.API.Test.Unit.Infrastructure
             // Arrange
             var customerId = Guid.NewGuid();
 
-            var customerDetails = new Customer(){
+            var customerDetails = new Customer()
+            {
                 Id = customerId,
                 FirstName = "John",
                 LastName = "Doe",
-                Email = "John@gmail.com" 
+                Email = "John@gmail.com"
             };
 
             _customerRepository.Setup(x => x.GetByIdAsync(It.IsAny<Guid>()))

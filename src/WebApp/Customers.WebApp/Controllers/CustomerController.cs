@@ -11,7 +11,7 @@ public class CustomerController : Controller
 
     private readonly ILogger<CustomerController> _logger;
 
-    public CustomerController(ICustomerHandler customerHandler, 
+    public CustomerController(ICustomerHandler customerHandler,
         ILogger<CustomerController> logger)
     {
         _customerHandler = customerHandler;
@@ -53,7 +53,7 @@ public class CustomerController : Controller
                 return View(customer);
             }
 
-            var addCustomerResponse =  await _customerHandler.AddCustomer(customer.ToDomainCustomer());
+            var addCustomerResponse = await _customerHandler.AddCustomer(customer.ToDomainCustomer());
 
             return addCustomerResponse.Match<IActionResult>(
                success => RedirectToAction("Index"),
@@ -94,7 +94,7 @@ public class CustomerController : Controller
                 return View(customer);
             }
 
-            var updateCustomerResponse =  await _customerHandler.UpdateCustomer(customer.ToDomainCustomer());
+            var updateCustomerResponse = await _customerHandler.UpdateCustomer(customer.ToDomainCustomer());
 
             return updateCustomerResponse.Match<IActionResult>(
                success => RedirectToAction("Index"),
@@ -130,11 +130,11 @@ public class CustomerController : Controller
     {
         try
         {
-          var updateCustomerResponse = await _customerHandler.DeleteCustomer(customerModel.Id);
-           
-           return updateCustomerResponse.Match<IActionResult>(
-                        success => RedirectToAction("Index"),
-                        error => View("Error", new ErrorViewModel() { ErrorMessage = error.ErrorMessage }));
+            var updateCustomerResponse = await _customerHandler.DeleteCustomer(customerModel.Id);
+
+            return updateCustomerResponse.Match<IActionResult>(
+                         success => RedirectToAction("Index"),
+                         error => View("Error", new ErrorViewModel() { ErrorMessage = error.ErrorMessage }));
         }
         catch (Exception ex)
         {

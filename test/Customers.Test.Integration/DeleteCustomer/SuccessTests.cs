@@ -16,7 +16,7 @@ namespace Customers.Test.Integration.DeleteCustomer
         {
             // Arrange
             var client = Server.CreateClient();
-            var customerRequest=
+            var customerRequest =
                 new
                 {
                     first_name = "John",

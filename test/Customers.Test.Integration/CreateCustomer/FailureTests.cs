@@ -25,8 +25,8 @@ namespace Customers.Test.Integration.CreateCustomer
             body.Should().NotBeNull();
         }
 
-        private object CustomerRequest(string? firstName = "John", string? lastName= "Doe",
-            string? email="test@gmail.com")
+        private object CustomerRequest(string? firstName = "John", string? lastName = "Doe",
+            string? email = "test@gmail.com")
         {
             return new
             {

@@ -30,7 +30,7 @@ namespace Customers.Infrastructure.Repositories
             {
                 return await context.Customers.Where(c => c.Id == customerId && c.IsActive).FirstOrDefaultAsync();
             }
-                    
+
         }
 
         public async Task<Customer> InsertAsync(Customer customer)
@@ -40,7 +40,7 @@ namespace Customers.Infrastructure.Repositories
                 await context.Customers.AddAsync(customer);
                 await context.SaveChangesAsync();
                 return customer;
-            }        
+            }
         }
 
         public async Task<Customer?> UpdateAsync(Customer customer)
