@@ -15,7 +15,7 @@ public class TraceIdMiddleware
     public async Task Invoke(HttpContext context)
     {
         var traceId = Activity.Current?.TraceId;
-        context.Response.Headers.Add(ApiHeaders.TraceId, traceId?.ToString());
+        context.Response.Headers.Append(ApiHeaders.TraceId, traceId?.ToString());
 
         await _next(context);
     }

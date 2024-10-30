@@ -11,16 +11,18 @@ namespace Customers.WebApp.Infrastructure;
 public class CustomerClient : ICustomerClient
 {
     private readonly HttpClient _httpClient;
+    private readonly ILogger<CustomerClient> _logger;
     private readonly JsonSerializerOptions jsonSerializerOptions = new JsonSerializerOptions
     {
         PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
         DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull
     };
 
-    public CustomerClient(HttpClient httpClient)
+    public CustomerClient(HttpClient httpClient,
+    ILogger<CustomerClient> logger)
     {
         _httpClient = httpClient;
-
+        _logger = logger;
     }
 
     public async Task<GetCustomerResponse> GetCustomerById(string id)
@@ -43,6 +45,7 @@ public class CustomerClient : ICustomerClient
         }
         catch (Exception ex)
         {
+            _logger.LogError(ex, "There is an error while getting customer details");
             return new GetCustomerResponse.Error(ex.Message);
         }
     }
@@ -66,6 +69,7 @@ public class CustomerClient : ICustomerClient
         }
         catch (Exception ex)
         {
+            _logger.LogError(ex, "There is an error while getting all customers");
             return new GetCustomersResponse.Error(ex.Message);
         }
     }
@@ -97,6 +101,7 @@ public class CustomerClient : ICustomerClient
         }
         catch (Exception ex)
         {
+            _logger.LogError(ex, "There is an error while adding customer");
             return new CreateCustomerResponse.Error(ex.Message);
         }
     }
@@ -129,6 +134,7 @@ public class CustomerClient : ICustomerClient
         }
         catch (Exception ex)
         {
+            _logger.LogError(ex, "There is an error while updating customer");
             return new UpdateCustomerResponse.Error(ex.Message);
         }
     }
@@ -150,6 +156,7 @@ public class CustomerClient : ICustomerClient
         }
         catch (Exception ex)
         {
+            _logger.LogError(ex, "There is an error while deleting customer");
             return new UpdateCustomerResponse.Error(ex.Message);
         }
     }
